@@ -1,0 +1,30 @@
+#bienvenue {
+    background-image : url("rodion.jpg"); 
+    width : 100% ;
+    height : 200% ;
+    background-position : left;
+ }
+ 
+ h2 {
+     font-family : Georgia, 'Times New Roman', Times, serif ;
+     font-size: 42px;
+     color : white ;
+     font-weight : bold ;
+     position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 200px ;
+    text-align : right ;
+ }
+
+ h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color :#D5F31F ;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 100px ;
+    text-align: right;
+ }

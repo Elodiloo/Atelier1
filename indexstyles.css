@@ -1,0 +1,38 @@
+#body {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      min-height: 100vh;
+}
+
+#menu {
+    display : flex ;
+    justify-content: space-around;
+    padding : 50 ;
+    text-align: center;
+    background-color: white;
+ }
+
+ #menu a {
+    text-decoration : none ;
+    color : black ;
+    font-weight: bold;
+    padding : 15px  15px;
+    border-radius : 10px;
+     }
+ 
+#menu div {
+    flex : 1;
+    text-align : right;
+}
+
+.changement-couleur:hover{
+   color: greenyellow;
+}
+
+#element-personnalise a {
+    color:green;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight : bold;
+    font-size :600;
+}

@@ -1,0 +1,38 @@
+
+h1 {
+    font-size: 5em; 
+    text-align: center; 
+    color : #029D5B 
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    color:#1C2126;
+}
+
+.box {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+.flex-item {
+    text-align: center;
+    padding: 20px;
+    border:1px
+}
+
+.image-arrondie {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+h4{
+    font-size: 2em;
+    text-align:center;
+    color: #1C2126;
+}
