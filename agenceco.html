@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="agencecostyles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>SiteAgenceco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div id="element-personnalise"><a>Agenc<em>Eco</em></a></div>
+         <div id="menu">
+                  <div><a href="#section1">Accueil</a></div>
+                  <div><a href="#section2">Notre équipe</a></div>
+                  <div><a href="#section3">Nos services</a></div>
+                  <div><a href="#section4">Témoignages</a></div>
+                  <div><a href="#section5">Contactez-nous</a></div>
+                  <div><a href="#section6">Notre galerie</a></div>
+         </div>
+    </header> 
+
+<main>
+    <a href="page360.html" target="_blank">
+    <div id="section1">
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>Bienvenue dans votre</h2>
+        <h1>agence web écologique</h1>
+        <br> <br> <br> <br> <br>
+    </div>
+    </a>
+
+    <div id="section2">
+    <h3>Notre équipe</h3>
+        <h6>Une équipe de choc à votre service !</h6>
+        <br>
+        <div class="box">
+            <div class="flexitem">
+                <img src="image1.jpg" alt="Julie" class="image-arrondie">
+                <h6>Julie Dupond</h6>
+                <p>Chef du Département R&D</p>
+            </div>
+            <div class="flexitem">
+                <img src="image2.jpg" alt="Rolland" class="image-arrondie">
+                <h6>Rolland Sylla</h6>
+                <p>Chef du Département Communication</p>
+            </div>
+            <div class="flexitem">
+                <img src="image3.jpg" alt="Javier" class="image-arrondie">
+                <h6>Javier Carmen</h6>
+                <p>Chef du Département Solutions Écologiques</p>
+            </div>
+        </div>
+    </div>
+   
+    <div id="section3">
+        <div class="bandeau-haut">
+            <div class="box-client">
+                 <h4>2500</h4>
+                 <h5>Clients satisfaits</h5><br>
+             </div>
+             <div class="box-client">
+                 <h4>2500</h4>
+                 <h5>Clients satisfaits</h5><br>
+                 </div>
+                 <div class="box-client">
+                     <h4>2500</h4>
+                     <h5>Clients satisfaits</h5><br>
+                     </div>
+                     <div class="box-client">
+                         <h4>2500</h4>
+                         <h5>Clients satisfaits</h5><br>
+                         </div>
+        </div>
+</div>
+
+        <h3>Nos services</h3>
+              <div class="box">
+            <div class="flex-item">
+                <img src="vector2.jpg" alt="création">
+                <h6>Création de sites web</h6>
+               </div>
+            <div class="flex-item">
+                <img src="vector1.jpg" alt="audit">
+                <h6>Audit qualité</h6>
+                </div>
+            </div>
+
+            <h3>Témoignages</h3>
+  <div id="section4">
+   
+    <div id="left-box">
+        <img src="image7.jpg" alt="Left Box Image">
+    </div>
+    
+    <div id="right-box">
+        <h6>A propos de nous</h6>
+        Sérieux, efficaces, rapides...<br> Satisfaits ou remboursés !
+        
+        <div id="photos-container">
+            <div id="pc1">
+            <img src="v2.jpg" alt="Photo 1"><br> Écologique
+            </div>
+            <div id="pc2">
+            <img src="v3.jpg" alt="Photo 2"><br>Responsable
+            </div>
+            <div id="pc3">
+            <img src="v1.jpg" alt="Photo 3"><br>24/7 Assistance
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+<div id="section5">
+    <br>
+    <h3>Contactez-nous</h3>
+    <br>
+
+    <div id="contact-form">
+        <form id="myForm">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="category">Catégorie</label>
+                    <input type="text" id="category" name="category" required>
+                </div>
+            </div>
+ 
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div>
+                   <label for="phone">Téléphone</label>
+                   <input type="number" id="phone" name="phone" required>
+                </div>
+
+                <div>
+            <label for="city">Ville</label>
+            <input type="text" id="city" name="city" required>
+                </div>
+            
+            </div>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="9" required></textarea>
+
+            <button type="button" onclick="submitForm()">Envoyer</button>
+        </form>
+    </div>
+ </div>
+
+    <div id="section6">
+        <br>
+        <h3>Galerie</h3>
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide1" class="arrow arrow-prev">&#9664;</label>
+                <label for="slide2" class="arrow arrow-next">&#9654;</label>
+                
+            </div>
+
+            <input class="slide-input" id="slide1" type="radio" name="slides" checked>
+            <img class="slide-img" src="image4.jpg" alt="ordi">
+
+            <input class="slide-input" id="slide2" type="radio" name="slides">
+            <img class="slide-img" src="image5.jpg" alt=""homme>
+
+
+        </div>
+    </div>
+    
+    <div class= "footer1">
+        <div class="boite">
+            Content
+            <br>
+            blabla
+        </div>
+        <div class="boite">
+            Informations
+            <br>
+            blabla
+        </div>
+        <div class="boite">
+            Services
+            <br>
+            blabla
+        </div>
+        <div class="boite">
+            Aide
+            <br>
+            blabla
+        </div>
+        <div class="boite">
+           <img src="tel.png" alt="tel" class="reduced-icones1"> +330000
+            <br>
+            <br>
+          <img src="lieu.png" alt="lieu" class="reduced-icones1"> 75001 Paris
+          <br>
+            France
+        </div>
+    </div>
+    
+    <div class="footer">
+            <div class="left-text">
+               Copyright © 2024 AGENCECO. All rights reserved.
+            </div>
+            <div class="right-icons">
+                <img src="icones.png" alt="icones" class="reduced-icones">
+            </div>
+    </div>
+
+</main>
+</body>
+
+</html>
