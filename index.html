@@ -1,29 +1,265 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<html>
 
-    <head>
-        <link href="indexstyles.css" rel="stylesheet">
-        <meta charset="UTF-8">
-        <title>Index</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-      
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteAgenceco</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-        
+</head>
+
+<body>
+    <header>
+    <div class="py-20">
+         <div id="element-personnalise"><a>Agenc<em>Eco</em></a></div>
          <div id="menu">
-                  <div id="element-personnalise"><a> Agenc<em>Eco</em></a></div>
-                  <div><a href="bienvenue.html" class="changement-couleur">Accueil</a></div>
-                  <div><a href="page2.html" class="changement-couleur">Notre équipe</a></div>
-                  <div><a href="">Nos services</a></div>
-                  <div><a href="">Témoignages</a></div>
-                  <div><a href="">Contactez-nous</a></div>
-                  <div><a href="">Notre galerie</a></div>
+                  <div><a href="#section1">Accueil</a></div>
+                  <div><a href="#section2">Notre équipe</a></div>
+                  <div><a href="#section3">Nos services</a></div>
+                  <div><a href="#section5">Témoignages</a></div>
+                  <div><a href="#section4">Contactez-nous</a></div>
+                  <div><a href="#section6">Notre galerie</a></div>
          </div>
+    </div>
+    </header> 
+
+<main>
+    <div id="section1">
+        <a href="360.html" target="_blank">
+            <img class="landing col-100" src="images/rodion.jpg" alt="landing images">
+            <div class="landing_text">
+               <h2>Bienvenue dans votre</h2>
+                <h1>agence web écologique</h1> 
+            </div>
+        </a>  
+    </div>
+    </a>
+
+    <div id="section2">
+        <div class="container text-center">
+            <h3>Notre équipe</h3>
+            <h6>Une équipe de choc à votre service !</h6>
+            <div class="row text-center">
+                <div class="col-33">
+                    <img src="images/image1.jpg" alt="Julie" class="image-arrondie">
+                    <h6>Julie Dupond</h6>
+                    <p>Chef du Département R&D</p>
+                </div>
+                <div class="col-33">
+                    <img src="images/image2.jpg" alt="Rolland" class="image-arrondie">
+                    <h6>Rolland Sylla</h6>
+                    <p>Chef du Département Communication</p>
+                </div>
+                <div class="col-33">
+                    <img src="images/image3.jpg" alt="Javier" class="image-arrondie">
+                    <h6>Javier Carmen</h6>
+                    <p>Chef du Département Solutions Écologiques</p>
+                </div>
+            </div>
+        </div>
         
-              
-              
-    </body>
+    </div>
+   
+    <div id="section3" class="bg-blue-light py_30 mt-50">
+        <div class="container">
+            <div class="row text-center">
+            <div class="col-25">
+                <h4>2500</h4>
+                <h5>Clients satisfaits</h5>
+            </div>
+            <div class="col-25">
+                <h4>2500</h4>
+                <h5>Clients satisfaits</h5>
+            </div>
+            <div class="col-25">
+                <h4>2500</h4>
+                <h5>Clients satisfaits</h5>
+            </div>
+            <div class="col-25">
+                <h4>2500</h4>
+                <h5>Clients satisfaits</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section44">
+    <div class="container">
+        <div class="title_text">
+        <h3>Nos services</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-50">
+                <div class="bg-light mr-50 p-50 b-radius-20">
+                    <img class="img-service" src="images/vector1.png" alt="création">
+               </div>
+               <h6>Création de sites web</h6>
+            </div>
+            <div class="col-50 ">
+                <div class="bg-light ml-50 p-50 b-radius-20">
+                    <img class="img-service" src="images/vector2.png" alt="audit">
+              </div>
+              <h6>Audit qualité</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section4" class="bg-blue-light">
+    <div class="title_text text-center ">
+   <br> <h3>Contactez-nous</h3>
+    </div>
+     <div id="contact-form">
+        <form id="myForm">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="category">Catégorie</label>
+                    <input type="text" id="category" name="category" required>
+                </div>
+            </div>
+ 
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div>
+                   <label for="phone">Téléphone</label>
+                   <input type="number" id="phone" name="phone" required>
+                </div>
+
+                <div>
+            <label for="city">Ville</label>
+            <input type="text" id="city" name="city" required>
+                </div>
+            
+            </div>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="9" required></textarea>
+
+            <button type="button" onclick="submitForm()">Envoyer</button>
+       </form>
+    </div>
+ </div>
+
+ </div>
+
+<div id="section5">
+    <div class="container">
+        <div class="title_text">
+        <h3>Témoignages</h3>
+        </div>
+        <div class="row">
+            <div class="col-50">
+                <div class="mr-50 p-30 b-radius-20">
+                    <img class="b-radius-20" src="images/image7.jpg" alt="Left Box Image">
+                </div>
+            </div>
+            <div class="col-50">
+                   <div class="ml-50 p-30 b-radius-20 text-center border">
+                    <h6>A propos de nous</h6>
+                    Sérieux, efficaces, rapides...<br>Satisfaits ou remboursés !
+                    <div class="photos-container row">
+                        <div class="col-33"> 
+                        <img class="image_border" src="images/v2.jpg" alt="Photo 1">
+                         <p>Écologique</p>
+                        </div>
+                        <div class="col-33">
+                        <img class="image_border" src="images/v3.jpg" alt="Photo 2">
+                        <p>Responsable</p>
+                        </div>
+                        <div class="col-33">
+                        <img class="image_border" src="images/v1.jpg" alt="Photo 3">
+                        <p>24/7 Assistance</p>
+                        </div>
+                  </div>
+                </div>
+          </div>
+</div>
+    
+           
+<div id="section6">
+    
+    <div class="container">
+        
+        <div class="title_text">
+        <h3>Notre galerie</h3>
+        </div>
+       
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide1" class="arrow arrow-prev">&#9664;</label>
+                <label for="slide2" class="arrow arrow-next">&#9654;</label>
+                
+            </div>
+
+            <input class="slide-input" id="slide1" type="radio" name="slides" checked>
+            <img class="slide-img" src="images/image4.jpg" alt="ordi">
+
+            <input class="slide-input" id="slide2" type="radio" name="slides">
+            <img class="slide-img" src="images/image5.jpg" alt=""homme>
+        </div>
+    </div>
+</div>
+     
+ <div id="footer1" class="bg-blue-light py_30">
+    <div class="container">
+         <div class=" row text-left">
+                 <div class="col-20">
+            <h5>Content</h5>
+            <br>
+            blabla
+                </div>
+                 <div class="col-20">
+            <h5>Informations</h5>
+            <br>
+            blabla
+                </div>
+               <div class="col-20">
+           <h5>Services</h5> 
+            <br>
+            blabla
+               </div>
+               <div class="col-20">
+            <h5>Aide</h5>
+            <br>
+            blabla
+               </div>
+               <div class="col-20">
+           <img src="images/tel.png" alt="tel" class="reduced-icones1"> +330000
+            <br>
+           <img src="images/lieu.png" alt="lieu" class="reduced-icones1"> 75001 Paris
+           <br> France
+               </div>
+          </div>
+      </div>
+      </div>
+</div>  
+</div>
+
+    <div id="footer" class="bg-blue-dark py_30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-50">
+                    Copyright © 2024 AGENCECO. All rights reserved.
+                    </div>
+                    <div class="col-50">
+                    <img src="images/icones.png" alt="icones" class="reduced-icones">
+                   </div>
+                </div>
+            </div>
+    </div>
+
+</main>
+</body>
 
 </html>
