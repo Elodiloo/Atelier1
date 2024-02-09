@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1">
     <title>SiteAgenceco</title>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/50a626f102.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,24 +37,24 @@
             </div>
         </a>  
     </div>
-    </a>
+    
 
     <div id="section2">
         <div class="container text-center">
             <h3>Notre équipe</h3>
             <h6>Une équipe de choc à votre service !</h6>
             <div class="row text-center">
-                <div class="col-33">
+                <div class="col-33 col-sm-100">
                     <img src="images/image1.jpg" alt="Julie" class="image-arrondie">
                     <h6>Julie Dupond</h6>
                     <p>Chef du Département R&D</p>
                 </div>
-                <div class="col-33">
+                <div class="col-33 col-sm-100">
                     <img src="images/image2.jpg" alt="Rolland" class="image-arrondie">
                     <h6>Rolland Sylla</h6>
                     <p>Chef du Département Communication</p>
                 </div>
-                <div class="col-33">
+                <div class="col-33 col-sm-100">
                     <img src="images/image3.jpg" alt="Javier" class="image-arrondie">
                     <h6>Javier Carmen</h6>
                     <p>Chef du Département Solutions Écologiques</p>
@@ -94,13 +94,13 @@
         </div>
         <div class="row text-center">
             <div class="col-50">
-                <div class="bg-light mr-50 p-50 b-radius-20">
+                <div class="bg-light ml-100 mr-100 p-50 b-radius-20">
                     <img class="img-service" src="images/vector1.png" alt="création">
                </div>
                <h6>Création de sites web</h6>
             </div>
             <div class="col-50 ">
-                <div class="bg-light ml-50 p-50 b-radius-20">
+                <div class="bg-light ml-100 mr-100 p-50 b-radius-20">
                     <img class="img-service" src="images/vector2.png" alt="audit">
               </div>
               <h6>Audit qualité</h6>
@@ -112,6 +112,7 @@
 <div id="section4" class="bg-blue-light">
     <div class="title_text text-center ">
    <br> <h3>Contactez-nous</h3>
+   <br> <h6>Pour toute question ou renseignement, remplissez le formulaire ci-dessous.</h6>
     </div>
      <div id="contact-form">
         <form id="myForm">
@@ -151,7 +152,7 @@
     </div>
  </div>
 
- </div>
+ 
 
 <div id="section5">
     <div class="container">
@@ -160,14 +161,16 @@
         </div>
         <div class="row">
             <div class="col-50">
-                <div class="mr-50 p-30 b-radius-20">
+                <div class="mr-10 b-radius-20">
                     <img class="b-radius-20" src="images/image7.jpg" alt="Left Box Image">
                 </div>
             </div>
             <div class="col-50">
-                   <div class="ml-50 p-30 b-radius-20 text-center border">
+                   <div class="ml-10 b-radius-20 text-center border">
+                   <div class="photo-text">
                     <h6>A propos de nous</h6>
                     Sérieux, efficaces, rapides...<br>Satisfaits ou remboursés !
+                   </div>
                     <div class="photos-container row">
                         <div class="col-33"> 
                         <img class="image_border" src="images/v2.jpg" alt="Photo 1">
@@ -184,36 +187,42 @@
                   </div>
                 </div>
           </div>
+   </div>
+</div>
 </div>
     
            
 <div id="section6">
-    
     <div class="container">
         
-        <div class="title_text">
+        <div class="title_text text-center">
         <h3>Notre galerie</h3>
+        <h6>Un environnement de travail idéal</h6>
         </div>
        
-        <div class="slider-container">
-            <div class="menu">
-                <label for="slide1" class="arrow arrow-prev">&#9664;</label>
-                <label for="slide2" class="arrow arrow-next">&#9654;</label>
-                
+        <div class="container">
+            <div class="slider-container">
+                <div class="menu">
+                    <label for="slide1" class="arrow arrow-prev"><i class="fa-solid fa-circle-chevron-left"></i></label>
+                    <label for="slide2" class="arrow arrow-next"><i class="fa-solid fa-circle-chevron-right"></i></label>
+                    
+                </div>
+    
+                <input class="slide-input" id="slide1" type="radio" name="slides" checked>
+                <img class="slide-img" src="images/image4.jpg" alt="ordi">
+    
+                <input class="slide-input" id="slide2" type="radio" name="slides">
+                <img class="slide-img" src="images/image5.jpg" alt="homme">
             </div>
-
-            <input class="slide-input" id="slide1" type="radio" name="slides" checked>
-            <img class="slide-img" src="images/image4.jpg" alt="ordi">
-
-            <input class="slide-input" id="slide2" type="radio" name="slides">
-            <img class="slide-img" src="images/image5.jpg" alt=""homme>
         </div>
     </div>
 </div>
      
+
+
  <div id="footer1" class="bg-blue-light py_30">
-    <div class="container">
-         <div class=" row text-left">
+<div class="container">
+            <div class="row">
                  <div class="col-20">
             <h5>Content</h5>
             <br>
@@ -244,7 +253,7 @@
       </div>
       </div>
 </div>  
-</div>
+
 
     <div id="footer" class="bg-blue-dark py_30">
             <div class="container">
@@ -253,7 +262,11 @@
                     Copyright © 2024 AGENCECO. All rights reserved.
                     </div>
                     <div class="col-50">
-                    <img src="images/icones.png" alt="icones" class="reduced-icones">
+                        <div class="reduced-icones">
+                           <i class="fa-brands fa-facebook-f"></i>
+                           <i class="fa-brands fa-instagram"></i>
+                           <i class="fa-brands fa-twitter"></i>
+                      </div>
                    </div>
                 </div>
             </div>
