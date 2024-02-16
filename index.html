@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>SiteAgenceco</title>
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,19 +13,33 @@
 </head>
 
 <body>
-    <header>
-    <div class="py-20">
-         <div id="element-personnalise"><a>Agenc<em>Eco</em></a></div>
-         <div id="menu">
-                  <div><a href="#section1">Accueil</a></div>
-                  <div><a href="#section2">Notre équipe</a></div>
-                  <div><a href="#section3">Nos services</a></div>
-                  <div><a href="#section5">Témoignages</a></div>
-                  <div><a href="#section4">Contactez-nous</a></div>
-                  <div><a href="#section6">Notre galerie</a></div>
-         </div>
-    </div>
-    </header> 
+<header>
+        <nav class="navbar">
+            <a href="#" class="logo">Agenc<span class="em">Eco</a>
+            <div class="nav-links">
+                   <ul>
+                     <li class="active"><a href="#section1">Accueil</a></li>
+                     <li><a href="#section2">Notre équipe</a></li>
+                     <li><a href="#section3">Nos services</a></li>
+                     <li><a href="#section5">Témoignages</a></li>
+                     <li><a href="#section4">Contactez-nous</a></li>
+                     <li><a href="#section6">Notre galerie</a></li>
+                   </ul>
+            </div>
+            <img src="images/button.png" alt="menu burger" class="menu_burger">
+        </nav>
+   
+   </header>
+
+<script>
+       const menuBurger = document.querySelector(".menu_burger")
+           const navLinks = document.querySelector(".nav-links")
+    
+           menuBurger.addEventListener('click',()=>{
+           navLinks.classList.toggle('mobile-menu')
+           })
+</script>
+
 
 <main>
     <div id="section1">
@@ -43,7 +57,7 @@
         <div class="container text-center">
             <h3>Notre équipe</h3>
             <h6>Une équipe de choc à votre service !</h6>
-            <div class="row text-center">
+            <div class="row text-center col-sm-100">
                 <div class="col-33 col-sm-100">
                     <img src="images/image1.jpg" alt="Julie" class="image-arrondie">
                     <h6>Julie Dupond</h6>
@@ -67,19 +81,19 @@
     <div id="section3" class="bg-blue-light py_30 mt-50">
         <div class="container">
             <div class="row text-center">
-            <div class="col-25">
+            <div class="col-25 hide-on-small">
                 <h4>2500</h4>
                 <h5>Clients satisfaits</h5>
             </div>
-            <div class="col-25">
+            <div class="col-25 hide-on-small">
                 <h4>2500</h4>
                 <h5>Clients satisfaits</h5>
             </div>
-            <div class="col-25">
+            <div class="col-25 col-sm-100">
                 <h4>2500</h4>
                 <h5>Clients satisfaits</h5>
             </div>
-            <div class="col-25">
+            <div class="col-25 hide-on-small">
                 <h4>2500</h4>
                 <h5>Clients satisfaits</h5>
             </div>
@@ -93,13 +107,13 @@
         <h3>Nos services</h3>
         </div>
         <div class="row text-center">
-            <div class="col-50">
+            <div class="col-50 col-sm-100">
                 <div class="bg-light ml-100 mr-100 p-50 b-radius-20">
                     <img class="img-service" src="images/vector1.png" alt="création">
                </div>
                <h6>Création de sites web</h6>
             </div>
-            <div class="col-50 ">
+            <div class="col-50 col-sm-100">
                 <div class="bg-light ml-100 mr-100 p-50 b-radius-20">
                     <img class="img-service" src="images/vector2.png" alt="audit">
               </div>
@@ -120,7 +134,7 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                 <div>
                     <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required autofocus>
                 </div>
                 <div>
                     <label for="category">Catégorie</label>
@@ -160,27 +174,27 @@
         <h3>Témoignages</h3>
         </div>
         <div class="row">
-            <div class="col-50">
+            <div class="col-50 col-sm-100">
                 <div class="mr-10 b-radius-20">
                     <img class="b-radius-20" src="images/image7.jpg" alt="Left Box Image">
                 </div>
             </div>
-            <div class="col-50">
+            <div class="col-50 col-sm-100">
                    <div class="ml-10 b-radius-20 text-center border">
                    <div class="photo-text">
                     <h6>A propos de nous</h6>
                     Sérieux, efficaces, rapides...<br>Satisfaits ou remboursés !
                    </div>
                     <div class="photos-container row">
-                        <div class="col-33"> 
+                        <div class="col-33 col-sm-100"> 
                         <img class="image_border" src="images/v2.jpg" alt="Photo 1">
                          <p>Écologique</p>
                         </div>
-                        <div class="col-33">
+                        <div class="col-33 col-sm-100">
                         <img class="image_border" src="images/v3.jpg" alt="Photo 2">
                         <p>Responsable</p>
                         </div>
-                        <div class="col-33">
+                        <div class="col-33 col-sm-100">
                         <img class="image_border" src="images/v1.jpg" alt="Photo 3">
                         <p>24/7 Assistance</p>
                         </div>
@@ -222,7 +236,7 @@
 
  <div id="footer1" class="bg-blue-light py_30">
 <div class="container">
-            <div class="row">
+            <div class="row2">
                  <div class="col-20">
             <h5>Content</h5>
             <br>
@@ -244,30 +258,28 @@
             blabla
                </div>
                <div class="col-20">
-           <img src="images/tel.png" alt="tel" class="reduced-icones1"> +330000
-            <br>
-           <img src="images/lieu.png" alt="lieu" class="reduced-icones1"> 75001 Paris
-           <br> France
+                <i class="fa-solid fa-phone" style="color: #FFD43B;"></i> +330000
+               <br><br>
+                <i class="fa-sharp fa-solid fa-location-dot" style="color: #FFD43B;"></i> 75001 Paris
+               <br> France
                </div>
           </div>
       </div>
       </div>
-</div>  
+
 
 
     <div id="footer" class="bg-blue-dark py_30">
             <div class="container">
-                <div class="row">
+                <div class="row3">
                     <div class="col-50">
                     Copyright © 2024 AGENCECO. All rights reserved.
                     </div>
-                    <div class="col-50">
-                        <div class="reduced-icones">
+                    <div class="col-50 row icones">
                            <i class="fa-brands fa-facebook-f"></i>
                            <i class="fa-brands fa-instagram"></i>
                            <i class="fa-brands fa-twitter"></i>
-                      </div>
-                   </div>
+                    </div>
                 </div>
             </div>
     </div>
